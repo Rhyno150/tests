@@ -34,18 +34,17 @@ var results3 = [
     {name : 'apples', qty : 37}
 ];
 
-describe('test my findItemsOver20 function', function () {
-    it('... should return all the products that have a quantity higher than 20.', function () {
-
-        assert.deepEqual(results, findItemsOver(itemList, 20));
-
+describe('Test my findItemsOver20 function' , function(){
+    it("It should return 'aryList' when the list is equal to itemList. " , function(){
+        assert.deepEqual(results, findItemsOver20(itemList), "This should be true");
     });
 
-    //it('... should return ("Hello tsego") when called with tsego', function () {
+    it("It should return 'results2' when the list is equal to itemList2. " , function(){
+        assert.deepEqual(results2, findItemsOver20(itemList2), "This should be true");
+    });
 
-     //   assert.equal(greet("tsego"), greet("tsego"), "this should not be true");
-
-      
-  //  });
-
+    it("It should return 'results3' when the list is equal to 'itemList3'." , function(){
+        assert.deepEqual(results3, findItemsOver20(itemList3), "This should be true");
+    });
+    
 });
